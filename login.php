@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
     if ($verified==1) {
       echo "Welcome.";
     } else {
-      echo "Account has not been verified. An email was sent to '$email'";
+      echo "Account has not been verified. An email was sent to '$email'. Please check the spam folder.";
     }
 
   } else {

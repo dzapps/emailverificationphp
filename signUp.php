@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
   if($conn->query($sql)){
     $to=$email;
     $subject="Please verify your email address";
-    $message="Dear $fname, Click <a href='http://localhost/mailverification/verify.php?vkey=$vkey'>here</a> to verify your account. Please check the spam folder.";
+    $message="Dear $fname, Click <a href='http://localhost/mailverification/verify.php?vkey=$vkey'>here</a> to verify your account.";
     $headers="From: emailverificationbot100@yahoo.com \r\n";
     $headers.="MIME-Version:1.0" . "\r\n";
     $headers.="Content-type:text/html;charset=UTF-8" . "\r\n";

@@ -3,7 +3,7 @@ if(isset($_GET['vkey'])){
   $vkey=$_GET['vkey'];
   $servername="localhost";
   $username = "root";
-  $password = "shivam";
+  $password = "";
   $dbname = "future";
   $conn = new mysqli($servername, $username, $password, $dbname);
   if ($conn->connect_error) {
